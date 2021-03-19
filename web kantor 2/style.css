@@ -1,0 +1,423 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Quicksand' sans-serif;
+	color: #333;
+	font: 16px/20px;
+}
+
+header{
+	height: 70px;
+}
+
+header h1 {
+	display: inline-block;
+	float: left;
+	padding: 16px 24px; 
+}
+
+header h1 a:hover {
+	color: #ea0823;
+}
+
+header h1 a {
+	transition: .3s;
+}
+
+header ul {
+	float: right;
+}
+
+header ul li {
+	padding: 24px;
+	display: inline-block;
+}
+
+header ul li a:hover {
+	color: #ea0823;
+}
+
+header ul li a{
+	transition: .3s;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.container::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.mobile-menu {
+	float: right;
+	display: none;
+	padding: 18px;
+}
+
+.mobile-menu {
+	cursor: pointer;
+}
+
+#check {
+	display: none;
+}
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -300px;
+	width: 300px;
+	background-color: rgba(80,88,133, .5);
+}
+
+.sidebar ul li a{
+	color: #fff;
+}
+
+.sidebar ul li {
+	padding: 24px;
+	transform: .3s;
+}
+
+.sidebar ul li:hover {
+	background-color: #ea0823;
+	transition: .3s;
+	transition-property: background;
+}
+
+#check:checked ~ .sidebar {
+	left: 0;
+}
+
+.banner {
+	background-image: url(h.jpg);
+	background-position: 0;
+	padding: 150px 0;
+	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+section {
+	padding: 50px 0;
+}
+
+.banner img {
+	width: 150px;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px #ddd;
+	margin-bottom: 10px;
+}
+
+.banner h2,
+.banner p,
+.banner span {
+	color: #fff;
+}
+.banner-left {
+	padding: 24px;
+}
+.banner h2 {
+	margin-bottom: 10px;
+}
+.banner {
+	font-size: 18px;
+}
+
+section h3 {
+	padding-bottom: 20px;
+	text-align: center;
+	margin: 20px;
+	position: relative;
+}
+section h3::before {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width: 120px;
+	height: 1px;
+	background-color: #ddd;
+	left: calc(50% - 60px);
+}
+
+section h3::after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	width: 40px;
+	height: 4px;
+	background-color: #f84744;
+	left: calc(50% - 20px);
+}
+
+.pt {
+	width: 30%;
+	box-sizing: border-box;
+	padding: 25px;
+	float : left;
+	border-radius: 2px;
+	box-shadow: 0 5px 7px black;
+	font-family: verdana;
+	margin: 10px;
+	margin-bottom: 15px;
+	background-position: center;
+}
+
+.pt:hover {
+	transform: scale(1.1);
+	transition: .2s;
+}
+
+.pt h4 {
+	color: #dc1d1d;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+.pt h5 {
+	float: left;
+	color: #dc1d1d;
+	text-align: center;
+	position: fixed;
+}
+
+.pt ul li {
+	margin: 0 auto;
+}
+
+.pt2 {
+	width: 30%;
+	box-sizing: border-box;
+	padding: 25px;
+	float : left;
+	border-radius: 2px;
+	box-shadow: 0 5px 7px black;
+	font-family: verdana;
+	margin: 10px;
+	margin-bottom: 15px;
+	background-position: center;
+}
+
+.pt2:hover {
+	transform: scale(1.1);
+	transition: .2s;
+}
+
+.pt2 h4 {
+	color: #dc1d1d;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+.pt2 h5 {
+	float: left;
+	color: #dc1d1d;
+	text-align: center;
+	position: fixed;
+}
+
+.pt2 ul li {
+	margin: 0 auto;
+}
+
+.pt3 {
+	width: 30%;
+	box-sizing: border-box;
+	padding: 25px;
+	float : left;
+	border-radius: 2px;
+	box-shadow: 0 10px 13px black;
+	font-family: verdana;
+	margin: 10px;
+	margin-bottom: 15px;
+}
+
+.pt3:hover {
+	transform: scale(1.1);
+	transition: .2s;
+}
+
+.pt3 h4 {
+	color: #dc1d1d;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+.pt3 h5 {
+	float: left;
+	color: #dc1d1d;
+	text-align: center;
+	position: fixed;
+}
+
+.pt3 ul li {
+	margin: 0 auto;
+}
+
+.pt4 {
+	width: 30%;
+	box-sizing: border-box;
+	padding: 25px;
+	float : left;
+	border-radius: 2px;
+	box-shadow: 0 10px 13px black;
+	font-family: verdana;
+	margin: 10px;
+	margin-bottom: 15px;
+}
+
+.pt4:hover {
+	transform: scale(1.1);
+	transition: .2s;
+}
+
+.pt4 h4 {
+	color: #dc1d1d;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+.pt4 h5 {
+	float: left;
+	color: #dc1d1d;
+	text-align: center;
+	position: fixed;
+}
+
+.pt4 ul li {
+	margin: 0 auto;
+}
+
+
+#profile p {
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 25px;
+	margin-bottom: 15px;
+}
+
+.col-3 {
+	width: 33.33%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	padding: 50px 10px;
+}
+
+.col-3 h4 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 15px;
+}
+
+.footer {
+
+
+}
+
+.footer .copy {
+	color: #ddd;
+	text-align: center;
+	font-size: 12px;
+}
+
+.whatsapp img {
+	width:70px;
+ 	height:70px;
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	z-index:100;
+}
+
+@media (max-width: 768px){
+	.mobile-menu {
+		display: block;
+	}
+	header ul {
+		display: none;
+	}
+	.pt {
+		width: 50%;
+	}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- bagian profile -->
+	<section id="profile">
+		<div class="container">
+			<h3>Profile</h3>
+			<P>"A&Y ( ~JASA DOCUMENT LEGALITAS ~ ) || LAW FIRM. BENNY HUTABARAT, SH & PARTNER Kami Adalah, Sebuah Layanan Jasa Dalam Hal Mengurus macam - macam Perizinan Badan Usaha , Pendampingan / Bantuan Hukum, Di wilayah (JAWA BARAT) Khusus nya Kota Bandung & sekitar nya Kami Konsisten Dalam Mengerjakan Segala Bentuk Document LEGALITAS.</P>
+		</div>
+	</section>
+
+	<!-- bagian layanan -->
+	<section id="layanan">
+		<div class="container">
+			<h3>Layanan</h3>
+			<p>
+				-Pembuatan AKTA & Pendirian PT <br>
+				-Pendirian CV <br>
+				-Pendirian Yayasan <br>
+				-Pendirian PO <br>
+				-SIUP&TDP,TDUP, SIUK, SIUJK, IZIN MINUMAN ALKOHOL <br>
+				-Angka Pengenal Importir (API-U)& Kepabenan (PT.-CV) <br>
+				-Kami juga mengurus AKTA-AKTA perjanjian jual beli <br>
+			</p>
+		</div>
+	</section>
+	<section id="Perizinan">
+		<div class="container">
+			<h3>Perizinan</h3>
+			<p>
+				-Izin Usaha <br>
+				-Izin Lokasi
+			</p>
+		</div>
+	</section>
+	<section id="syarat&ketentuan">
+		<div class="container">
+			<h3>Syarat & Ketentuan</h3>
+			<div class="pt">
+				<h4>PENDIRIAN CV</h4>
+				<h5>(COMMANDITAIRE</h5><h5> VENNOOTSCHAP)</h5>
+					<ul>
+						<li><p>Fotokopi KTP Para pendiri CV</p></li><br>
+						<li><p>Fotokopi NPWP Para pendiri CV</p></li> <br>
+						<li><p>Nama CV</p></li> <br>
+						<li><p>Penjelasan mengenai bidang usaha</p></li>
+					</ul>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
